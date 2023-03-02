@@ -5,13 +5,16 @@
 BRANCH_NAME=$(git branch --show-current)
 
 # The commit-msg hook takes one parameter,
+# cat 读取文件的内容
 # which again is the path to a temporary file that contains the commit message written by the developer.
 COMMIT_MESSAGE=$(cat "$1")
 
-echo "$1"
+echo "文件地址 $1"
 # if commit message not null
 if [ -n "$COMMIT_MESSAGE" ]; then
   # if commit message not null, rewrite to the temporary file
+  # change commit message written by the devoloper
+  # echo "It is a test" > myfile, 显示结果到定向至文件
   echo "[${BRANCH_NAME}] ${COMMIT_MESSAGE}" > "$1"
 else
   # if commit message is null, throw error
