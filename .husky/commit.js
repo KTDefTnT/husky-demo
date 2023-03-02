@@ -24,6 +24,7 @@ fi
 
 const filePath = path.join(process.cwd(), '.git/hooks/prepare-commit-msg');
 
+console.log('filePath', filePath);
 fs.writeFileSync(filePath, str, 'utf-8');
 
 try {
