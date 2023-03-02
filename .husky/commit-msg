@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# get current branch name
+BRANCH_NAME=$(git branch --show-current)
+
+# The commit-msg hook takes one parameter,
+# which again is the path to a temporary file that contains the commit message written by the developer.
+COMMIT_MESSAGE=$(cat "$1")
+
+# if commit message not null
+if [ -n "$COMMIT_MESSAGE" ]; then
+  # if commit message not null, rewrite to the temporary file
+  echo "[${BRANCH_NAME}] ${COMMIT_MESSAGE}" > "$1"
+else
+  # if commit message is null, throw error
+  echo "Error: Aborting commit due to empty commit message."
+  exit 1;
+fi
