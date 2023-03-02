@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-console.log('哈哈哈哈哈哈哈', __dirname);
+console.log('哈哈哈哈哈哈哈', __dirname, process.cwd());
 // const str = `
 // COMMIT_MSG_FILE=$1
 // COMMIT_SOURCE=$2
