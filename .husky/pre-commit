@@ -6,6 +6,6 @@ export NVM_DIR="$HOME/.nvm"
 # Load husky library
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx eslint --fix
+npx eslint src --fix
 # npx lint-staged
 # npm run testEs
