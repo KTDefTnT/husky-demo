@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged & npm run testEs"
+      "pre-commit": "echo \"[Husky] pre-commit\" && lint-staged & npm run testEs"
     }
   },
   "lint-staged": {

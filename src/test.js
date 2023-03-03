@@ -1,4 +1,6 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-fs.writeFile(path.join(__dirname, 'test.json'), '运行成功');
+console.log(path.join(__dirname, "test.txt"));
+const filePath = path.join(__dirname, "test.txt");
+fs.writeFileSync(filePath, new Uint8Array(Buffer.from("Hello Node.js")));
