@@ -8,4 +8,12 @@ export NVM_DIR="$HOME/.nvm"
 
 
 npx lint-staged
+# Check the script result
+if [ $? -ne 0 ]; then
+  echo "Error: 提交的接口有重复声明，请检查完再提交。 "
+  exit 1
+fi
+# If the script passed, continue with the commit
+exit 0
+
 # npm run testEs

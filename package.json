@@ -9,7 +9,7 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "npx eslint --fix"
+      "npx eslint"
     ]
   },
   "author": "",

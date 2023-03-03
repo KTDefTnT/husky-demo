@@ -23,6 +23,7 @@ var lengthOfLongestSubstring = function(s) {
           }
         }
       }
+      
       map.set(key, end);
   }
 
