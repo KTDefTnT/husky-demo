@@ -8,7 +8,7 @@
     "testEs": "node ./src/test.js"
   },
   "lint-staged": {
-    "*.js": ["eslint"]
+    "*.js": ["eslint --fix"]
   },
   "author": "",
   "license": "ISC",
