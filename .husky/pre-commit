@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+# Load nvm 若存在nvm，则必须先加载nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Load husky library
+. "$(dirname -- "$0")/_/husky.sh"
+

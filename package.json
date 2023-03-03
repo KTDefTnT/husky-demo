@@ -13,7 +13,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint", "git add"]
+    "*.js": [
+      "eslint",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
