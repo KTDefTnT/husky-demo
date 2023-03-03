@@ -12,7 +12,7 @@
     }
   },
   "lint-staged": {
-    "src/index.js": "eslint --fix"
+    "src/*.js": ["eslint --fix", "git add"]
   },
   "author": "",
   "license": "ISC",
