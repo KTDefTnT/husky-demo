@@ -9,10 +9,7 @@
     "lint": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint",
-      "git add"
-    ]
+    "*.js": "eslint"
   },
   "author": "",
   "license": "ISC",
