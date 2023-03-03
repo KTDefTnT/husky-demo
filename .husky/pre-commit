@@ -6,6 +6,4 @@ export NVM_DIR="$HOME/.nvm"
 # Load husky library
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "${GIT_EDITOR}"
-
 echo "hello, ^_^"
