@@ -15,10 +15,10 @@ var lengthOfLongestSubstring = function(s) {
           const deleteKey = s[start];
           console.log(deleteKey);
           if (deleteKey !== key) {
-            map.delete(deleteKey)
-            start++
+            map.delete(deleteKey);
+            start++;
           } else {
-            start = map.get(key) + 1
+            start = map.get(key) + 1;
             flag = false;
           }
         }
