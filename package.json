@@ -8,8 +8,8 @@
     "testEs": "node ./src/test.js"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint"
+    "**/*.js": [
+      "npx eslint"
     ]
   },
   "author": "",
