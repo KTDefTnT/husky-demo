@@ -7,11 +7,6 @@
     "prepare": "husky install && chmod +x .husky/*",
     "testEs": "node ./src/test.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run testEs"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "eslint",
