@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install && chmod +x .husky/*",
     "testEs": "node src/test.js",
-    "precommit": "echo \"[Husky] pre-commit\""
+    "precommit": "npm run testEs"
   },
   "husky": {
     "hooks": {
