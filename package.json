@@ -5,11 +5,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install && chmod +x .husky/*",
-    "testEs": "node ./src/test.js",
-    "lint": "lint-staged"
+    "testEs": "node ./src/test.js"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": [
+      "eslint"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +19,8 @@
     "husky": "^8.0.0"
   },
   "dependencies": {
-    "lint-staged": "^13.1.2"
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
   },
   "description": ""
 }
