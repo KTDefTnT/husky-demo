@@ -6,4 +6,5 @@ export NVM_DIR="$HOME/.nvm"
 
 . "$(dirname -- "$0")/_/husky.sh"
 
+# npx eslint src
 npx lint-staged
