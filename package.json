@@ -9,13 +9,8 @@
     "prepare": "husky install && chmod +x .husky/*"
   },
   "lint-staged": {
-<<<<<<< HEAD
     "src/**/*.{js,jsx}": [
       "eslint"
-=======
-    "**/*.js": [
-      "npx eslint"
->>>>>>> 7d01c181e479ce15a46a41826589321b50094d3a
     ]
   },
   "author": "",
