@@ -1,11 +1,17 @@
 {
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "rules": {
-    "comma-spacing": "error",
-    "semi": "error",
-    "quotes": ["error", "double"]
-  }
+  // "parserOptions": {
+  //   "ecmaVersion": 6,
+  //   "sourceType": "module",
+  //   "ecmaFeatures": {
+  //     "jsx": true
+  //   }
+  // },
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  // "plugins": ["react"]
+  // "rules": {
+  //   "comma-spacing": "error",
+  //   "semi": "error",
+  //   "quotes": ["error", "double"]
+  //   // "no-undef": "error"
+  // }
 }
